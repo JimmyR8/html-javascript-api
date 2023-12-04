@@ -1,47 +1,32 @@
 
-Página Web Weather Citys 🌦️
-¡Bienvenido a Weather Citys, una página web simple que obtiene información meteorológica para Venezuela y la muestra dinámicamente! La página también incluye imágenes correspondientes según la temperatura, brindándote una representación visual del clima actual.
-
-Tabla de Contenidos
-Introducción
-Cómo Funciona
-Rangos de Temperatura
-Instalación
-Uso
-Contribuciones
-Licencia
-Introducción
-Weather Citys es una página web que utiliza la API de GoWeather para obtener datos meteorológicos en tiempo real para Venezuela. Luego, actualiza dinámicamente la información de temperatura y viento en la página. Además, proporciona representaciones visuales de diferentes rangos de temperatura a través de imágenes.
+Página Web Weather Citys
+Resumen
+Esta es una página web sencilla que obtiene información meteorológica para cuidades y la muestra de manera dinámica. La página proporciona detalles como la temperatura, la velocidad del viento y una imagen acompañante basada en el rango de temperatura.
 
 Cómo Funciona
-La página web está construida con HTML y JavaScript. Realiza una solicitud asíncrona a la API de GoWeather para obtener los datos meteorológicos. La información de temperatura y viento se muestra en la página, y se muestra una imagen que representa el rango de temperatura actual.
+La página utiliza la API de goweather para obtener datos meteorológicos en tiempo real para Venezuela. Luego actualiza dinámicamente la información de temperatura y viento en la página. Además, según la temperatura, muestra una imagen relevante que representa la condición climática ambiental.
 
-Rangos de Temperatura
-Si la temperatura es de 10°C o menos, se considera FRÍO.
-Frío
-
-Si la temperatura es de 26°C o más, se considera CALIENTE.
-Caliente
-
-Si la temperatura está entre 18°C y 26°C, se considera CÁLIDO.
-Cálido
-
-Para temperaturas fuera de los rangos anteriores, se considera FRESCO.
-Fresco
-
-Instalación
-No se requiere instalación. Simplemente abre el archivo HTML en un navegador web para ver la página web de Weather Citys.
-
+Características
+🌡️ Visualización de temperatura.
+💨 Información de velocidad del viento.
+🖼️ Imágenes dinámicas basadas en la temperatura.
+🌞 Admite diferentes rangos de temperatura: Frío, Caliente, Templado y Fresco.
 Uso
-Abre el archivo HTML (index.html) en un navegador web.
-Explora la información actual de temperatura y viento para Venezuela.
-Disfruta de la representación visual del clima a través de imágenes correspondientes.
-Contribuciones
-¡Las contribuciones son bienvenidas! Siéntete libre de abrir problemas o enviar solicitudes de extracción para mejorar la funcionalidad o agregar nuevas características.
+Simplemente abre el archivo HTML en un navegador web.
+La página obtendrá automáticamente información meteorológica para una ciudad en Venezuela.
+Se mostrarán los detalles de temperatura y viento, junto con una imagen que refleja el clima actual.
+Imágenes Ambientales
+Clima Frío:
+Imagen Fría
 
-Licencia
-Este proyecto está bajo la Licencia MIT. Siéntete libre de usar, modificar y distribuir el código según los términos de la licencia.
+Clima Caliente:
+Imagen Caliente
 
+Clima Templado:
+Imagen Templada
 
+Clima Fresco:
+Imagen Fresca
 
-
+Nota
+Se pueden realizar ajustes en los rangos de temperatura e imágenes correspondientes según sea necesario. Siéntete libre de modificar el código para adaptarlo a tus preferencias o úsalo como plantilla para otros proyectos relacionados con el clima.

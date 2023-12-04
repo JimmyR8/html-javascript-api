@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Ramirez API RICKY AND MORTY</title>
+    <script>
+        var idPersonaje = Math.floor(Math.random() * 826)
+        fetch('https://rickandmortyapi.com/api/character/' + idPersonaje)
+            .then(function (response) { return response.json(); })
+            .then(function (data) {
+                console.log("Esta es URL de la imagen de la API que consultastes " + data.image)
+                console.log("Este es el nombre del personaje de la API que consultastes " + data.name)
+                document.getElementById('imagen1').src = data.image;
+                document.getElementById('nombrePersonaje').innerText = data.name; // Agrega esta línea para mostrar el nombre
+            })
+    </script>
+</head>
+
+<body>
+    <h1>Personaje:</h1>
+    <h2 id="nombrePersonaje"></h2> <!-- Este elemento mostrará el nombre del personaje -->
+    <img id="imagen1" 
+     src="https://rickandmortyapi.com/api/character/avatar/8.jpeg" 
+     alt="Recarga la pagina">
+</body>
+
+</html>

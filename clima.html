@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEATHER CITYS</title>
     <script>
-        fetch('https://goweather.herokuapp.com/weather/Venezuela')
+        fetch('https://goweather.herokuapp.com/weather/oslo')
             .then(function (response) { return response.json(); })
             .then(function (data) {
                 console.log("Esta es la temperatura = " + data.temperature);
+                console.log("Esta es la temperatura = " + data.temperature);
                 console.log("Esta es la velocidad del viento = " + data.wind);
+
+                var temperaturaSITIO = data.temperature.replace(' °C', '').replace('+', '')
 
                 var temperatureElement = document.getElementById('temperature');
                 var windElement = document.getElementById('wind');
@@ -18,30 +22,33 @@
                 temperatureElement.innerText = "Temperature: " + data.temperature;
                 windElement.innerText = "Wind: " + data.wind;
 
-                if (data.temperature <= 10) {
-                    console.log('La temperatura es FRIA = ' + data.temperature);
+                if (temperaturaSITIO <= 10) {
+                    console.log('La temperatura es FRIA = ' + temperaturaSITIO);
                     imageElement.src = 'https://www.gtush.com/wp-content/uploads/2019/09/clima-frio-1-e1569421004942.jpg';
                     imageElement.alt = 'Ambiente Frio';
-                } else if (data.temperature >= 26) {
-                    console.log('La temperatura es CALIENTE = ' + data.temperature);
+                } else if (temperaturaSITIO >= 26) {
+                    console.log('La temperatura es CALIENTE = ' + temperaturaSITIO);
                     imageElement.src = 'https://villalaminados.com/wp-content/uploads/2018/05/construccion-para-ambientes-calidos.jpg';
                     imageElement.alt = 'Ambiente Caliente';
-                } else if (data.temperature >= 18) {
-                    console.log('La temperatura es CALIDA = ' + data.temperature);
+                } else if (temperaturaSITIO >= 18) {
+                    console.log('La temperatura es CALIDA = ' + temperaturaSITIO);
                     imageElement.src = 'https://humanidades.com/wp-content/uploads/2023/06/Clima-templado.jpg';
                     imageElement.alt = 'Ambiente Calido';
-                } else {
-                    console.log('La temperatura es FRESCA = ' + data.temperature);
-                    imageElement.src = 'https://www.ip.gov.py/ip/wp-content/uploads/2021/03/clima-calor-sol-.jpg';
-                    imageElement.alt = 'Ambiente Fresco';
                 }
-            });
-    </script>
+        //             else {
+        //                 console.log('La temperatura es FRESCA = ' + temperaturaSITIO);
+        //                 imageElement.src = 'https://www.ip.gov.py/ip/wp-content/uploads/2021/03/clima-calor-sol-.jpg';
+        //                 imageElement.alt = 'Ambiente Fresco';
+        //             }
+        //         });
+        // </script>
 </head>
+
 <body>
     <h1>PAG WEB WEATHER CITYS</h1>
     <div id="temperature"></div>
     <div id="wind"></div>
     <img id="weather-image" src="" alt="">
 </body>
+
 </html>

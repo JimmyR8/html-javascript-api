@@ -1,7 +1,7 @@
 
 Página Web Weather Citys
 Resumen
-Esta es una página web sencilla que obtiene información meteorológica para cuidades y la muestra de manera dinámica. La página proporciona detalles como la temperatura, la velocidad del viento y una imagen acompañante basada en el rango de temperatura.
+Esta es una página web sencilla que obtiene información meteorológica de las cuidades y la muestra de manera dinámica. La página proporciona detalles como la temperatura, la velocidad del viento y una imagen acompañante basada en el rango de temperatura.
 
 Cómo Funciona
 La página utiliza la API de goweather para obtener datos meteorológicos en tiempo real para Venezuela. Luego actualiza dinámicamente la información de temperatura y viento en la página. Además, según la temperatura, muestra una imagen relevante que representa la condición climática ambiental.

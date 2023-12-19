@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEATHER CITYS</title>
     <script>
-        fetch('https://goweather.herokuapp.com/weather/Bogota')
+        fetch('https://goweather.herokuapp.com/weather/Barrancabermeja')
             .then(function (response) { return response.json(); })
             .then(function (data) {
                 console.log("Esta es la temperatura = " + data.temperature);
@@ -33,7 +33,7 @@
                     imageElement.src = 'images/calor.png';
                     imageElement.alt = 'Ambiente Caliente';
                     audioElement.src = 'audio/calor.mp3';
-                } else if (temperaturaSITIO >= 18) {
+                } else  {
                     console.log('La temperatura es CALIDA = ' + temperaturaSITIO);
                     imageElement.src = 'images/calido.png';
                     imageElement.alt = 'Ambiente Calido';

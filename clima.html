@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEATHER CITYS</title>
     <script>
-        fetch('https://goweather.herokuapp.com/weather/Barrancabermeja')
+        fetch('https://goweather.herokuapp.com/weather/Bogota')
             .then(function (response) { return response.json(); })
             .then(function (data) {
                 console.log("Esta es la temperatura = " + data.temperature);
@@ -25,19 +25,19 @@
 
                 if (temperaturaSITIO <= 10) {
                     console.log('La temperatura es FRIA = ' + temperaturaSITIO);
-                    imageElement.src = 'https://www.gtush.com/wp-content/uploads/2019/09/clima-frio-1-e1569421004942.jpg';
+                    imageElement.src = 'images/frio.png';
                     imageElement.alt = 'Ambiente Frio';
-                    audioElement.src = 'file:///C:/Users/JIMMY/Music/am_wind_howl_04_hpx.mp3';
+                    audioElement.src = 'audio/frio.mp3';
                 } else if (temperaturaSITIO >= 26) {
                     console.log('La temperatura es CALIENTE = ' + temperaturaSITIO);
-                    imageElement.src = 'https://villalaminados.com/wp-content/uploads/2018/05/construccion-para-ambientes-calidos.jpg';
+                    imageElement.src = 'images/calor.png';
                     imageElement.alt = 'Ambiente Caliente';
-                    audioElement.src = 'file:///C:/Users/JIMMY/Music/crackling-fireplace-nature-sounds-8012.mp3';
+                    audioElement.src = 'audio/calor.mp3';
                 } else if (temperaturaSITIO >= 18) {
                     console.log('La temperatura es CALIDA = ' + temperaturaSITIO);
-                    imageElement.src = 'https://www.deutschland.de/sites/default/files/styles/image_carousel_mobile/public/media/image/tdt_13042021_wald_fakten_erholungsraum.jpg?itok=VUskgfzn';
+                    imageElement.src = 'images/calido.png';
                     imageElement.alt = 'Ambiente Calido';
-                    audioElement.src = 'file:///C:/Users/JIMMY/Music/JungleSouthAmerica%20EE201201.mp3';
+                    audioElement.src = 'audio/calido.mp3';
                 }
 
                 // Elemento de audio en la pagina

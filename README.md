@@ -17,16 +17,19 @@ La página utiliza la API de goweather para obtener datos meteorológicos en tie
 3. Se mostrarán los detalles de temperatura y viento, junto con una imagen que refleja el clima actual.
 4. Imágenes Ambientales
    1. Clima Frío:
-   - Imagen Fría
+      - Imagen Fría
 
    2. Clima Caliente:
-   - Imagen Caliente
+      - Imagen Caliente
 
    3. Clima Templado:
-   - Imagen Templada
+      - Imagen Templada
 
    4. Clima Fresco:
-   - Imagen Fresca
+      - Imagen Fresca
+
+>[!IMPORTANT]
+>La pagina funciona mientras que la API [GOWEATHER](https://goweather.herokuapp.com/weather/Bogota) funcione, si no funciona no se podra traer la informacion de la API, por lo tanto la pagina no funcionará.
 
 >[!NOTE]
 > Se pueden realizar ajustes en los rangos de temperatura e imágenes correspondientes según sea necesario. Siéntete libre de modificar el código para adaptarlo a tus preferencias o úsalo > como plantilla para otros proyectos relacionados con el clima.
